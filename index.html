@@ -10,9 +10,22 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
+  <script src='js/exercise-picker.js'></script>
 </head>
 
 <body>
-  <script src="js/script.js"></script>
+	<label for="exercise-selector">Select an exercise from the list:</label>
+	<select id="exercise-selector">
+		<option value=1>Greet</option>
+		<option value=2>isNumber</option>
+	</select>
+	<br/>
+	<label>Write the value to pass to the function:</label>
+	<input type="text" id='input-text'>
+	<br/>
+	<input type="submit" value="Submit!" onclick="runExercise();">
+	<br/>
+	<a id='result'></a>
 </body>
+
 </html>
